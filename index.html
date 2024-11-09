@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Object Recognition</title>
+    <style>
+      #webcam {
+        width: 640px;
+        height: 480px;
+      }
+      #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none; /* To make the canvas overlay unclickable */
+        width: 640px;
+        height: 480px;
+      }
+    </style>
+    <script type="module" crossorigin src="/Tensorflow/assets/index-Rr6tRZAT.js"></script>
+  </head>
+  <body>
+    <h1>Live Object Recognition with TensorFlow.js</h1>
+
+    <!-- Video element to show the webcam feed -->
+    <video id="webcam" width="640" height="480" autoplay></video>
+
+    <!-- Canvas to draw bounding boxes and labels -->
+    <canvas id="canvas"></canvas>
+
+  </body>
+</html>
